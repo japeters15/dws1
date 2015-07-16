@@ -1,0 +1,155 @@
+/* unvisited link */
+a:link{
+	color:#056dff;
+	text-decoration: none;
+	
+}
+
+/* visited link */
+a:visited{
+	color:#d761ff;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover{
+	color:#F22B1C;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active{
+	color:#ffb580;
+	text-decoration: none;
+}
+
+body{
+	text-align:center;
+	background-color:rgba(255, 255, 255, 1);
+	width:1440px:
+	margin:auto;
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	font-style: normal;
+	text-shadow: 2px 2px 8px #a05cff;
+}
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 250%;
+	font-weight: lighter;
+	font-style: oblique;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:200%;
+	font-weight:lighter;
+	font-style: oblique;
+}
+
+
+h4{
+	color:rgba(130, 41, 255, 1);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:150%;
+	font-weight:lighter;
+	font-style: oblique;
+}
+
+p, figcaption, li{
+	color:rgba(75, 0, 133, 1);
+	background-color:#ebffcc;
+}
+
+p{
+	line-height: 105%;
+	text-indent: 50px;
+	width: ;
+	height: ;
+	padding: ;
+	border:	1px solid red;
+	margin-left: ;
+}
+
+#type{
+	line-height: 105%;
+	text-indent: 50px;
+	width:;
+	height: ;
+	padding: ;
+	border:	1px solid red;
+	margin-left: ;
+}
+			
+img{
+	width:300px;
+	height:400px;
+}
+
+aside{
+	width=2800px;
+	height=950px;
+}
+
+figure{
+	padding:50px;
+	float:left;
+	display: block;
+}
+
+ol{
+	list-style-type: lower-roman;
+	list-style-position: inside;
+	width:
+	height:
+	padding:
+	border:
+	margin:
+}
+
+ul{
+	list-style-type: circle;
+	list-style-position: inside;
+	width: 500px;
+	height: ;
+	padding: ;
+	border:	1px solid red;
+	margin-left: ;
+}
+
+#benefits{
+	padding-top:70px;
+}
+
+a.hovertext {
+    position: relative;
+    width: 300px;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+a.hovertext:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 20px;
+    width: 260px;
+    background: rgba(0,0,0,0.8);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+
+a.hovertext:hover:after, a.hovertext:focus:after {
+    opacity: 1.0;
+}
