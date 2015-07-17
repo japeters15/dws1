@@ -26,12 +26,12 @@ a:active{
 body{
 	text-align:center;
 	background-color:rgba(255, 255, 255, 1);
-	width:1440px:
-	margin:auto;
+	width:1440px;
+	margin: auto;
 	padding:5px;
 }
 
-li.nav{
+.nav{
 	display:inline;
 	border-top: 3px double #000;
 	border-bottom: 3px double #000;
@@ -96,14 +96,14 @@ p.a{
 
 p.b{
 	width: 600px;
-	padding: 5px; ;
+	padding: 5px;
 	border: dotted;
 	border-radius: 5px;
 	border-width:thin;
 	margin: auto ;
 }
 
-#type{
+p.type{
 	line-height: 105%;
 	text-indent: 50px;
 	height: 250px ;
