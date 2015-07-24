@@ -11,11 +11,11 @@
 <body><!--Body Opening-->
 		<header><!--Section Opening-->
 		<h1 id="top"> The World of Dance </h1>
-		<nav id="main_nav">
+		<nav>
 			<ul>
-				<li class="nav"><a href="#dancers"> Favorite Dancers</a></li>
-				<li class="nav"><a href="#types"> Styles of Dances</a></li>
-				<li class="nav"><a href="#benefits"> Benefits of Dance</a></li>
+				<li class="nav"><a href="#content1"> Favorite Dancers</a></li>
+				<li class="nav"><a href="#content2"> Styles of Dances</a></li>
+				<li class="nav"><a href="#content4"> Benefits of Dance</a></li>
 			</ul>
 		</nav>		
 		</header><!--Header Closing-->
@@ -25,7 +25,8 @@
 		</aside>
 			
 		<article><!--Article Opening-->
-			<h2 id="dancers"> My Favorite Dancers </h2>
+		<div id="content1">
+			<h3 id="dancers"> My Favorite Dancers </h3>
 			
 				<a class="hovertext" href="images/Jan.png" title="Janelle Ginestra">
 						<img src="images/Jan.png"
@@ -66,38 +67,12 @@
 						<img src="images/matt.jpg" 
 					alt="#5"/>
 					</a>
-					
+		</div>		
 		</article><!--Article Closing-->
 		
 		<article><!--Article Opening-->
-			<h3 id="types"> Styles of Dances </h3>
-			<figure>
-				<a href="images/ballet.jpg">
-  				<img src="images/ballet.jpg" alt="Ballet">
-  				</a>
-  				<figcaption>Ballet Dancer</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="images/hiphop.jpg">
-  				<img src="images/hiphop.jpg" alt="Hip-Hop">
-  				</a>
-  				<figcaption>Hip-Hop Dancer</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="images/lyrical.jpg">
-  				<img src="images/lyrical.jpg" alt="Lyrical">
-  				</a>
-  				<figcaption>Lyrical Dancer</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="images/somba.jpg">
-  				<img src="images/somba.jpg" alt="Somba">
-  				</a>
-  				<figcaption>Caribbean Dancer</figcaption>
-			</figure>
+		<div id="content3">
+		<h3 id="types"> Styles of Dances </h3>
 				<h4><strong>Ballet</strong></h4>
 			<p class="type">
 				<em>Ballet</em> is a type of performance dance that originated in the Italian 
@@ -148,9 +123,41 @@
 				 in parts of the United Kingdom and North America. Some even have gone so far as to label it 
 				 as "the dance craze" of 2006.
 			</p>
+		</div>
+			<div id="content2">
+			<h3> Images of Dance </h3>
+			<figure>
+				<a href="images/ballet.jpg">
+  				<img src="images/ballet.jpg" alt="Ballet">
+  				</a>
+  				<figcaption>Ballet </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/hiphop.jpg">
+  				<img src="images/hiphop.jpg" alt="Hip-Hop">
+  				</a>
+  				<figcaption>Hip-Hop </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/lyrical.jpg">
+  				<img src="images/lyrical.jpg" alt="Lyrical">
+  				</a>
+  				<figcaption>Lyrical </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/somba.jpg">
+  				<img src="images/somba.jpg" alt="Somba">
+  				</a>
+  				<figcaption>Caribbean </figcaption>
+			</figure>
+		</div>
 		</article><!--Article Close-->
 		<br/>
 		<article>
+		<div id="content4">
 			<h3 id="benefits">Benefits of Dance</h3>
 			
 				<ol>
@@ -173,10 +180,11 @@
 					permanently use these expressive qualities even when you are not dancing.
 					</li>
 				</ol>			
-			
+		</div>
 		</article>	
 		<footer>
-			<h3 id="studios">Want To Book Dancers?</h3>
+		<div id="content5">
+			<h3 class="studios">Want To Book Dancers?</h3>
 				<h4><strong>Contact them directly:</strong></h4>
 				<ul class="foot">
 					<li><a href="http://www.seanbankhead.com/contact.html">Sean Bankhead</a></li>
@@ -189,6 +197,7 @@
 				</ul>
 				<p class="b"><a href="#top"> Top </a></p>
 				&copy; 2015 The World of Dance
+		</div>
 </footer>
 </body>
 </html>
