@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><!--Head Openeing-->
+		<meta charset="utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700italic' rel='stylesheet' type='text/css'>
+		<title> The World of Dance </title>
+		<link href="css/main.css" rel="stylesheet"/>
+		<link href="css/bgaudioplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/bgaudioplayer.js"></script>
+	</head><!--Head Closing-->
+	
+<body><!--Body Opening-->
+				<div id="p1" class="intro"></div>
+				<div id="p2" class="intro"></div>
+				<div id="p3" class="intro"></div>
+				<div id="p4" class="intro"></div>
+				<div id="p5" class="intro"></div>
+				<div id="p6" class="intro"></div>
+				<div id="p7" class="intro"></div>
+				<div id="p8" class="intro"></div>
+				<div id="p9" class="intro"></div>
+				<div id="p10" class="intro"></div>
+				<div id="p11" class="intro"></div>
+				<div id="p12" class="intro"></div>
+				<div id="p13" class="intro"></div>
+				<div id="p14" class="intro"></div>
+				<div id="p15" class="intro"></div>
+				<div id="p16" class="intro"></div>
+				<div id="p17" class="intro"></div>
+				<div id="p18" class="intro"></div>
+				<div id="p19" class="intro"></div>
+				<div id="p20" class="intro"></div>
+				<div id="p21" class="intro"></div>
+				<div id="p22" class="intro"></div>
+				<div id="p23" class="intro"></div>
+				<div id="p24" class="intro"></div>
+				<div id="p25" class="intro"></div>
+<script>
+/*
+Boxing-away Script- By Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more free DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+	var espeed=100
+	var counter=1
+	var temp=new Array()
+	var temp2=new Array()
+
+	var containerwidth=(window.innerWidth)?parseInt(window.innerWidth)/5  : parseInt(document.body.clientWidth/5)
+	var containerheight=(window.innerWidth)?parseInt(window.innerHeight)/5 : parseInt(document.body.offsetHeight/5)
+
+	for (i=1;i<=25;i++){
+		temp[i]=document.getElementById("p"+i).style
+		temp[i].width=containerwidth + 'px'
+		temp[i].height=containerheight + 'px'
+}
+
+	for (i=1;i<=5;i++)
+		temp[i].left=(i-1)*containerwidth + 'px'
+
+	for (i=6;i<=10;i++){
+		temp[i].left=(i-6)*containerwidth + 'px'
+		temp[i].top=containerheight + 'px'
+}
+
+	for (i=11;i<=15;i++){
+		temp[i].left=(i-11)*containerwidth + 'px'
+		temp[i].top=2*containerheight + 'px'
+}
+
+	for (i=16;i<=20;i++){
+		temp[i].left=(i-16)*containerwidth + 'px'
+		temp[i].top=3*containerheight + 'px'
+}
+
+	for (i=21;i<=25;i++){
+		temp[i].left=(i-21)*containerwidth + 'px'
+		temp[i].top=4*containerheight + 'px'
+}
+
+	function erasecontainerie(){
+		var whichcontainer=Math.round(Math.random()*25)
+		if (whichcontainer==0)
+		whichcontainer=1
+		if (temp[whichcontainer].visibility!="hidden")
+		temp[whichcontainer].visibility="hidden"
+	else{
+	while (temp[whichcontainer].visibility=="hidden"){
+		whichcontainer=Math.round(Math.random()*25)
+	if (whichcontainer==0)
+		whichcontainer=1
+}
+	temp[whichcontainer].visibility="hidden"
+}
+
+	if (counter==25){
+		clearInterval(beginerase)
+		for (i=1;i<26;i++)
+		temp[i].display="none"
+}
+		counter++
+		espeed-=10
+
+}
+beginerase=setInterval("erasecontainerie()",espeed)
+
+
+</script>
+		<header><!--Section Opening-->
+		<h1 id="top"> The World of Dance </h1>
+		<nav>
+			<ul>
+				<li class="nav"><a href="#content1"> Favorite Dancers</a></li>
+				<li class="nav"><a href="#content2"> Styles of Dances</a></li>
+				<li class="nav"><a href="#content4"> Benefits of Dance</a></li>
+			</ul>
+		</nav>	
+			<!--Define audio tag with source elements pointing to audio file (and fallback files)-->
+
+<audio id="mybgplayer">
+<source src="music/stella.mp3" type="audio/mpeg">
+<source src="music/feel.mp3" type="audio/mpeg">
+<source src="music/blame.mp3" type="audio/mpeg">
+</audio>
+
+<!--Define corresponding audio interface. Certain CSS classes trigger changes to them-->
+
+<div id="mybgplayerui" class="bgplayerui">
+<img class="play" src="images/play.gif" alt="play" data-pausesrc="images/pause.gif" /> <img class="rewind" src="images/restart.gif" alt="restart" style="position:relative; left:-4px" /> 
+<div class="volume"></div>
+
+</div>
+
+<script>
+
+
+var playerinstance=bgaudioplayer({
+	audioid: 'mybgplayer', // id of audio element
+	audiointerface: 'mybgplayerui', // id of corresponding UI div
+	autoplay: true, // auto play music?
+	persistTimeLine: true, // Persist player's current timeline/ volume when moving from page to page?
+	volume: 0.1, // Default volume (0.0 to 1.0)
+	volumelevels: 15 // # of volume bars to show in UI
+})
+
+</script>
+		</header><!--Header Closing-->
+		
+		<aside>
+			<p class="a"><q>The dance is a poem of which each movement is a word.</q>-Mata Hari</p>
+		</aside>
+			
+		<article><!--Article Opening-->
+		<div id="content1">
+			<h3 id="dancers"> My Favorite Dancers </h3>
+			
+				<a class="hovertext" href="images/Jan.png" title="Janelle Ginestra">
+						<img src="images/Jan.png"
+					alt="#1"/>
+					</a>
+				
+					
+				<a class="hovertext" href="images/Kay.jpg" title="KK Harris">
+						<img src="images/Kay.jpg" 
+					alt="#2"/>
+					</a>
+					
+				
+				<a class="hovertext" href="images/Les.jpg" title="Les Twins">
+						<img src="images/Les.jpg"
+					alt="#3"/>
+					</a>
+					
+			
+				<a class="hovertext" href="images/Sean.jpg" title="Sean Bankhead">
+						<img src="images/Sean.jpg" 
+					alt="#4"/>
+					</a>
+					
+			
+				<a class="hovertext" href="images/Willda.jpg" title="Wilda Beast">
+						<img src="images/Willda.jpg" 
+					alt="#5"/>
+					</a>
+					
+				<a class="hovertext" href="images/mar.jpg" title="Marqueese Scott">
+						<img src="images/mar.jpg" 
+					alt="#4"/>
+					</a>
+					
+			
+				<a class="hovertext" href="images/matt.jpeg" title="Matt Stephanina">
+						<img src="images/matt.jpg" 
+					alt="#5"/>
+					</a>
+		</div>		
+		</article><!--Article Closing-->
+		
+		<article><!--Article Opening-->
+		<div id="content3">
+		<h3 id="types"> Styles of Dances </h3>
+			<table>
+			<tr>
+				<th><strong>Ballet</strong></th>
+			</tr>
+			<tr>
+				<td><em>Ballet</em>is a type of performance dance that originated in the Italian 
+				Renaissance courts of the 15th century and later developed into a concert 
+				dance form in France and Russia. It has since become a widespread, highly 
+				technical form of dance with its own vocabulary based on French terminology. 
+				It has been globally influential and has defined the foundational techniques 
+				used in many other dance genres. Ballet requires years of training to learn 
+				and master, and much practice to retain proficiency. It has been taught in 
+				ballet schools around the world, which have historically used their own cultures 
+				to evolve the art.
+				</td>
+			</tr>
+			</table>	
+			
+			<table>
+			<tr>
+				<th><strong>Hip-Hop</strong></th>
+			</tr>
+			<tr>
+				<td><em>Hip-Hop Dance</em>refers to street dance styles primarily performed to hip-hop 
+				music or that have evolved as part of hip-hop culture. It includes a wide range of 
+				styles primarily breaking, locking, and popping which were created in the 1970s 
+				and made popular by dance crews in the United States. The television show Soul 
+				Train and the 1980s films Breakin', Beat Street, and Wild Style showcased these 
+				crews and dance styles in their early stages; therefore, giving hip-hop mainstream 
+				exposure. The dance industry responded with a commercial, studio-based version of 
+				hip-hop—sometimes called "new style"—and a hip-hop influenced style of jazz dance 
+				called "jazz-funk". Classically trained dancers developed these studio styles in 
+				order to create choreography from the hip-hop dances that were performed on the 
+				street. Because of this development, hip-hop dance is practiced in both dance 
+				studios and outdoor spaces.
+				</td>
+			</tr>
+			</table>
+
+			<table>
+			<tr>
+				<th><strong>Lyrical</strong><th>
+			</tr>
+			<tr>	
+				<td><em>Lyrical Dance </em>is a style of dance created from the fusion of ballet with 
+				jazz and contemporary dance techniques and is a "cousin" to those styles. Lyrical 
+				dancing is performed to music with lyrics to inspire movements to express strong 
+				emotions the choreographer feels from the lyrics in the chosen song. Because lyrical
+				 dancing focuses on the expression of strong emotion, the style concentrates more 
+				 on individual approach and expressiveness than the precision of the dancer's movements.
+				 </td>
+			</tr>
+			</table>
+			
+			<table>
+			<tr>
+				<th><strong>Caribbean</strong></th>
+			</tr>
+			<tr>
+				 <td><em> Dutty Wine</em> is a form of Jamaican head dance, characteristically danced by young 
+				 women. There are several dancers in Jamaica who claim they were its creator, although 
+				 there is proof in a video with one of the crowned Dancehall Queens named Mad Michelle 
+				 first performing the dance in front of a crowd. The dance involves a rotating movement 
+				 of the neck ("wine" refers to winding, or gyration.) The dancer can also move their legs 
+				 like a bird, while simultaneously rotating their wrists, neck, and posterior. Sometimes 
+				 more advanced dancers will include the splits in their Dutty Wine. The dance is not done 
+				 by ordinary people in Jamaica, only by women who are known dancers or Dancehall Queens. The 
+				 dance experienced a surge of popularity around the world, especially in Jamaican communities 
+				 in parts of the United Kingdom and North America. Some even have gone so far as to label it 
+				 as "the dance craze" of 2006.
+				 </td>
+			</tr>
+			</table>
+		</div>
+		
+			<div id="content2">
+			<h3> Images of Dance </h3>
+			<figure>
+				<a href="images/ballet.jpg">
+  				<img src="images/ballet.jpg" alt="Ballet">
+  				</a>
+  				<figcaption>Ballet </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/hiphop.jpg">
+  				<img src="images/hiphop.jpg" alt="Hip-Hop">
+  				</a>
+  				<figcaption>Hip-Hop </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/lyrical.jpg">
+  				<img src="images/lyrical.jpg" alt="Lyrical">
+  				</a>
+  				<figcaption>Lyrical </figcaption>
+			</figure>
+			
+			<figure>
+				<a href="images/somba.jpg">
+  				<img src="images/somba.jpg" alt="Somba">
+  				</a>
+  				<figcaption>Caribbean </figcaption>
+			</figure>
+		</div>
+		</article><!--Article Close-->
+		<br/>
+		<article>
+		<div id="content4">
+			<h3 id="benefits">Benefits of Dance</h3>
+			
+				<ol>
+					<li class="benefits"><h4><strong>Health</strong></h4>
+					When you dance, your cardiovascular system improves, your muscle tone increases and you 
+					burn calories. This low-impact aerobic activity also increases flexibility, strength, 
+					and balance. Olympic athletes often dance as part of their training to sharpen their 
+					control, agility, and speed. <q>Dancing is great exercise, and our studios offer a pleasant, 
+					fun atmosphere in which to learn.</q>-Fred Astaire <abbr title="Franchised Dance Studios">FDS</abbr>
+					</li>
+					<li class="benefits"><h4><strong>Confidence</strong></h4>
+					Dancers possess an aura of self-confidence and an ability to enjoy themselves more in social
+					 situations. When you learn how to dance, your entire mental outlook will take on a fresh sense 
+					 of creativity, motivation, and energy. This new self-confidence in your dancing abilities will 
+					 transfer to other aspects of your life as well.
+					</li>
+					<li class="benefits"><h4><strong>Self-Expression</strong></h4>
+					Dance provides an emotional outlet so that you can express your feelings through your body movements 
+					with passion and flair. Dancing will bring out, improve upon, and strengthen your ability to 
+					permanently use these expressive qualities even when you are not dancing.
+					</li>
+				</ol>			
+		</div>
+		</article>	
+		<footer>
+		<div id="content5">
+			<h3 class="studios">Want To Book Dancers?</h3>
+				<h4><strong>Contact them directly:</strong></h4>
+				<ul class="foot">
+					<li><a href="http://www.seanbankhead.com/contact.html">Sean Bankhead</a></li>
+					<li><a href="http://www.immabeast.co">Willda Beast</a></li>
+					<li><a href="https://instagram.com/janelleginestra/">Janelle Ginestra</a></li>
+					<li><a href="http://www.lestwins.org/#booking">Les Twins</a></li>
+					<li><a href="http://kaelynnharris.com">Kay Kay Harris</a></li>
+					<li><a href="http://marquesescott.us/contact/">Marquese Scott</a></li>
+					<li><a href="http://mattsteffanina.com/contact/">Matt Steffanina</a></li>
+				</ul>
+			<h3> Want More Information From Us? </h3>
+	<fieldset>	
+	<form action="MAILTO:japeters15@gmail.com" method="post" enctype="text/plain">
+			
+		<label> First Name</label>
+		<input type="text" name="name" placeholder="first name" required><br/>
+		    
+		<label> Last Name</label>
+		 <input type="text" name="name" placeholder="last name" required><br/>   
+			
+		<label> Email</label>
+		<input type="text" name="mail" placeholder="your email" required><br/>
+			
+		<label> Phone Number</label>
+		<input type="text" name="phone" placeholder="your phone number" required><br/>
+			
+		<label> Best way to contact you:</label>
+		<select>
+		 	<option>Cell Phone</option>
+    	 	<option>Email</option>
+    	 	<option value="third option">Text</option>
+		</select>
+			
+		<label> Comment</label>
+		<input type="text" name="comment" placeholder="your comment" size="50" required><br/>
+			Sex:<br/>
+		<label> Male</label>
+		<input type="radio" name="sex" value="male">
+		<label> Female</label>
+		<input type="radio" name="sex" value="female">	
+		<input type="submit" value="Send">
+		<input type="submit" name="reset" value="Reset">
+	</form>
+	</fieldset>
+
+				<p class="b"><a href="#top"> Top </a></p>
+				&copy; 2015 The World of Dance
+		</div>
+</footer>
+<script language="JavaScript">
+		//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+
+		//Script featured on Dynamic Drive
+
+		//Visit http://www.dynamicdrive.com for this script and more
+
+		colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+
+			n = 10;
+
+			y = 0;
+
+			x = 0;
+
+		n6=(document.getElementById&&!document.all);
+
+		ns=(document.layers);
+
+		ie=(document.all);
+
+		d=(ns||ie)?'document.':'document.getElementById("';
+
+		a=(ns||n6)?'':'all.';
+
+		n6r=(n6)?'")':'';
+
+		s=(ns)?'':'.style';
+		
+		if (ns){
+
+		for (i = 0; i < n; i++)
+
+		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+
+}
+
+		if (ie)
+
+		document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+		if (ie||n6){
+
+		for (i = 0; i < n; i++)
+
+		document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+
+}
+
+		if (ie)
+
+		document.write('</div></div>');
+
+		(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+		function Mouse(evnt){
+
+		y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+
+		x = (ns||n6)?evnt.pageX+1:event.x+1;
+
+}
+
+		(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+		function animate(){
+
+		o=(ns||n6)?window.pageYOffset:0;
+
+		if (ie)con.style.top=document.body.scrollTop + 'px';
+
+		for (i = 0; i < n; i++){
+
+		var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+
+		randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+		(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+
+		if (i < n-1){
+
+		 var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+		 temp1.top = parseInt(temp2.top) + 'px';
+
+ 		temp1.left = parseInt(temp2.left) + 'px';
+
+ } 
+
+		else{
+
+		temp1.top = y+o + 'px';
+
+ 		temp1.left = x + 'px';
+
+ }
+
+}
+
+		setTimeout("animate()",10);
+
+}
+
+		animate();
+
+		// -->
+
+</script>
+</body>
+</html>
+		

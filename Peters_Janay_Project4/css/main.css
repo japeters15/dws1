@@ -1,0 +1,278 @@
+.intro{
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:green;
+	background-color:black;
+	border:0.1px solid green;
+	z-index:10;
+}
+	
+/* unvisited link */
+a:link{
+	color:#056dff;
+	text-decoration: none;
+	
+}
+
+/* visited link */
+a:visited{
+	color:#d761ff;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover{
+	color:#F22B1C;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active{
+	color:#ffb580;
+	text-decoration: none;
+}
+
+body{
+	text-align:center;
+	background-image:url("../images/dance2.jpg");
+	background-color:rgba(255, 255, 255, 1);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:100%;
+	margin: auto;
+	padding:5px;
+}
+
+#content1{
+	display:inline;
+	width:620px;
+	margin:10px;
+}
+
+#content2{
+	display:inline;
+	width: 300px;
+	margin-top: 10px;
+}
+
+#content3{
+	float:left;
+	margin-top: 10px;
+}
+
+#content4{
+	margin-right:30px;
+	padding:3px;
+	clear:left;
+}
+
+#content5{
+	margin-top:15px;
+}
+nav li{
+	display:inline;
+	border-top: 3px double #000;
+	border-bottom: 3px double #000;
+	width: 500px;
+	margin:auto;
+	padding:8px;
+	background-color: rgba(255, 255, 255, 0.64);
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3.000em;
+	font-weight: bold;
+	font-style: normal;
+	text-shadow: 2px 2px 8px #a05cff;
+	margin:auto;
+	padding:5px;
+}
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2.500em;
+	font-weight: lighter;
+	font-style: oblique;
+	margin:auto;
+	padding-top:20px;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:2.000em;
+	font-weight:lighter;
+	font-style: oblique;
+}
+
+h3.studios{
+	background-image:url("../images/phone.png");
+	background-repeat:repeat-x;
+	background-position: 38% 40%;
+}
+
+
+h4{
+	color:rgba(130, 41, 255, 1);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:1.500em;
+	font-weight:lighter;
+	font-style: oblique;
+	padding-top:10px;
+}
+
+p, figcaption, li.benefits{
+	color:rgba(241, 224, 255, 0.84);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020000+0,84b2ac+100 */
+	background: #020000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #020000 0%, #84b2ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#020000), color-stop(100%,#84b2ac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #020000 0%,#84b2ac 100%); /* Chrome10+,Safari5.1+ */
+}
+
+p.a{
+	width: 600px;
+	padding: 5px; ;
+	border: dotted;
+	border-radius: 5px;
+	border-width:thin;
+	margin: auto ;
+}
+
+p.b{
+	width: 400px;
+	padding: 5px;
+	border: dotted;
+	border-radius: 5px;
+	border-width:thin;
+	margin: auto ;
+}
+
+table{
+	line-height: 105%;
+	text-indent: 50px;
+	box-shadow:	10px 10px 5px #f1e0ff;
+	margin-top:30px;
+	margin-bottom:20px;
+	width:400px;
+	padding-top: 20px;
+}
+
+li.benefits{
+	line-height: 105%;
+	text-indent: 50px;
+	padding: 1px;
+	box-shadow:	10px 10px 5px #f1e0ff;
+}
+
+ul.foot{
+	border-top: 3px double #000;
+	border-bottom: 3px double #000;
+	width: 300px;
+	margin:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:5px;
+	background-color:rgba(255, 255, 255, 0.64) ;
+	clear:left;
+}
+
+ol{
+	list-style-type: lower-roman;
+	list-style-position: inside;
+}
+
+ul{
+	list-style-type: circle;
+	list-style-position: inside;
+	padding-right: 40px ;
+}
+
+table, td{
+	border: 1px solid black;
+}
+
+table{
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+form{
+	border:1px solid black;
+	margin: 10px;
+	font-size: 15px;
+	padding:5px;
+	text-align:center;
+}
+
+th{
+	text-align:center;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-size: 20px;
+	
+}
+
+td:hover{
+	background-color: yellow;
+}
+
+
+td{
+	padding:5px;
+	font-size:15px;
+	background-color:pink;
+	border-spacing:2px 4px;
+}
+
+#submit{
+	color:blue;
+	background-color:pink;
+}
+
+input{
+	text-align:center;
+	clear:both;
+}
+
+input:focus{
+	background-color:yellow;
+}
+
+input:hover{
+	background-color: red;
+}
+
+#submit:hover{
+	background-color:yellow;
+}
+
+a.hovertext {
+    position: relative;
+    width: 300px;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+a.hovertext:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 20px;
+    width: 260px;
+    background: rgba(0,0,0,0.8);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+
+a.hovertext:hover:after, a.hovertext:focus:after {
+    opacity: 1.0;
+}
