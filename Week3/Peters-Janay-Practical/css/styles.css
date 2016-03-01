@@ -1,0 +1,169 @@
+/************************ Main Styles ************************/
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	font: 16px / 1.5 "Lato", sans-serif;
+	color: #666;
+	background-image: url(../images/homebackground.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-attachment:fixed;
+	background-size: 1500px;
+	text-align:center;
+}
+
+h1{
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+	margin-top:30px;
+	padding:10px;
+	visibility:hidden;
+	margin-bottom:0;
+}
+
+h2{
+	font-size:60px;
+	color:#ffffff;
+}
+
+a{
+	color:#dddddd;
+	text-decoration:none;
+}
+
+#slogan{
+	font-size:34px;
+	color:#ffffff;
+}
+
+nav{
+	border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+
+header{
+	padding-bottom:500px;
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+li{
+	display:inline;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#current-page{
+	color:#d93600;
+}
+
+/* mouse over link */
+a:hover{
+	color:#d93600;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active{
+	color:#d93600;
+	text-decoration: none;
+}
+
+
+#slogan.p{
+	font-size:34px;
+	color:#ffffff;
+}
+
+#promo{
+	background-color:#ffffff;
+	margin:auto;
+	width:100%;
+	
+}
+
+#promo-first-col{
+margin-left:0;
+
+}
+
+.promo-col{
+	float:right;
+	width:255px;
+	height:255px;
+	padding-right:30px;
+	padding-top:20px;
+	margin-top:80px;
+}
+
+#coffee{
+	background-image:url(../images/ico_coffee.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#music{
+	background-image:url(../images/ico_music.png);
+	background-repeat:no-repeat;
+	
+}
+
+#food{
+	background-image:url(../images/ico_food.png);
+	background-repeat:no-repeat;
+	
+}
+
+#service{
+	background-image:url(../images/ico_service.png);
+	background-repeat:no-repeat;
+	
+}
+
+#featured.h2{
+	font-size:34px;
+	color:#868686;
+}
+
+#featured-first-col{
+	float:left;
+}
+
+#featured{
+	width:100%;
+	background-color:#ffffff;
+	margin:auto;
+}
+
+.featured-col{
+	float:left;
+	width:360px;
+	background-color:#ffffff;
+	padding:60px;
+}
+
+.read-more{
+	margin:10px;
+	background-color:#d93600;
+	color:#ffffff;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	padding-left:30px;
+}
+
+.read-more:hover{
+	background-color:#999999;
+}
+
+footer{
+	font-size:12px;
+	background-color:#111111;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin:0;
+	clear:both;
+}
